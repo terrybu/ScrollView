@@ -17,6 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    //this line seems not completely necessary if you do properly set your auto-layout constraints (all subviews in respect to the scrollview) in storyboard
+//    self.scrollView.contentSize = CGSizeMake(self.view.bounds.size.width, 1000);
+    
 }
 
 - (void)didReceiveMemoryWarning {
