@@ -18,9 +18,14 @@ class ViewController: UIViewController {
         
         
         for var i = 0.0; i <= Double(contentView.frame.size.height); i = i + 100 {
-            let label = UILabel(frame: CGRect(x: Double(50), y: i, width: 100, height: 50))
+            let label = UILabel(frame: CGRect(x: Double(8), y: i, width: 100, height: 25))
             label.text = String(format:"%f", i)
+            label.textColor = UIColor.grayColor()
+            let line = UIView(frame: CGRect(x: Double(0), y: i, width: Double(self.view.frame.size.width), height: 1))
+            line.backgroundColor = UIColor.grayColor()
+            
             contentView.addSubview(label)
+            contentView.addSubview(line)
             
         }
     }
